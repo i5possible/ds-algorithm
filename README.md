@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## This is a demo used for explain the basic data structure and the algorithm in a simple way.
 
-You can use the [editor on GitHub](https://github.com/i5possible/ds-algorithm/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Growth of funciton
+1. O-notation
+2. Ω-notation
+3. Θ-notation
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Linear List
 
-### Markdown
+### Sorting algorithm
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Stack and Queue
 
-```markdown
-Syntax highlighted code block
+### Divide and Conquer
 
-# Header 1
-## Header 2
-### Header 3
+### Tree
 
-- Bulleted
-- List
+#### Binary tree
+1. Binary Search Tree
+2. Ordered Binary Tree
+3. Sorted Binary Tree
 
-1. Numbered
-2. List
+#### Huffman Tree
 
-**Bold** and _Italic_ and `Code` text
+Huffman Coding
 
-[Link](url) and ![Image](src)
-```
+### Graph
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Store Structure
 
-### Jekyll Themes
+#### Traversal
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/i5possible/ds-algorithm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Shortest path
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Search
