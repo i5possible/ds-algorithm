@@ -1,13 +1,13 @@
 ## This is a demo used for explain the basic data structure and the algorithm in a simple way.
 
-### Growth of funciton
+### Growth of Funciton
 1. O-notation
 2. Ω-notation
 3. Θ-notation
 
 ### Linear List
 
-### Sorting algorithm
+### Sorting Algorithm
 
 ### Stack and Queue
 
@@ -15,7 +15,7 @@
 
 ### Tree
 
-#### Binary tree
+#### Binary Tree
 1. Binary Search Tree
 2. Ordered Binary Tree
 3. Sorted Binary Tree
@@ -30,6 +30,6 @@ Huffman Coding
 
 #### Traversal
 
-#### Shortest path
+#### Shortest Path
 
 ### Search
