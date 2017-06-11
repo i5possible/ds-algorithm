@@ -7,6 +7,10 @@
 
 ### Linear List
 
+[SinglyLinkedList]({{ site.baseurl }}{% post_url 2017-06-09-linear-list %})
+
+[SinglyLinkedList2]({{ site.baseurl }}{% link _post/2017-06-09-linear-list.md %})
+
 ### Sorting Algorithm
 
 ### Stack and Queue
