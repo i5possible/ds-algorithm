@@ -27,3 +27,4 @@ gradle/*
 
 # IDEA
 .idea/
+/bin
