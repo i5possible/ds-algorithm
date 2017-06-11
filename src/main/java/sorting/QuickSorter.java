@@ -1,5 +1,7 @@
 package sorting;
 
+import commons.SortUtils;
+
 /**
  * 
  * @author shangxiaobin on 11/06/2017.
@@ -21,8 +23,8 @@ public class QuickSorter<T extends Comparable<T>> implements Sorter<T> {
 	 * @param right the rightest element index in  part of array that needing to sort
 	 */
 	private void quickSort(T[] input,int left,int right) {
-		int i = left; 
-		int j = right;
+		int leftStartIndex = left; 
+		int rightStartIndex = right;
 		
 		T temp = null;
 		
@@ -32,25 +34,23 @@ public class QuickSorter<T extends Comparable<T>> implements Sorter<T> {
 		
 		T basicValue = input[left];
 		
-		while(i != j) {
+		while(leftStartIndex != rightStartIndex) {
 			
-			while((-1 != input[j].compareTo(basicValue)) && i < j) 
-				j--;
-			while((1 != input[i].compareTo(basicValue)) && i < j)
-				i++;
+			while((-1 != input[rightStartIndex].compareTo(basicValue)) && leftStartIndex < rightStartIndex) 
+				rightStartIndex--;
+			while((1 != input[leftStartIndex].compareTo(basicValue)) && leftStartIndex < rightStartIndex)
+				leftStartIndex++;
 			
-			if(i < j) {
-				temp = input[i];
-				input[i] = input[j];
-				input[j] = temp;
+			if(leftStartIndex < rightStartIndex) {
+				SortUtils.exchangeArrayValue(input, leftStartIndex, rightStartIndex);
 			}
 		}
 		
-		input[left] = input[i];
-		input[i] = basicValue;
+		input[left] = input[leftStartIndex];
+		input[leftStartIndex] = basicValue;
 
-		quickSort(input,left,i-1);
-		quickSort(input,i+1,right);
+		quickSort(input,left,leftStartIndex-1);
+		quickSort(input,leftStartIndex+1,right);
 	}
 	
 }
