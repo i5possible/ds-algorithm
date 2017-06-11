@@ -16,4 +16,15 @@ public class SorterTest {
         Integer[] actual = sorter.sort(input);
         Assert.assertArrayEquals(expected, actual);
     }
+    
+    @Test
+    public void quick_sort_test() {
+    	Integer[] input = {24,65,73,54,43};
+    	Sorter<Integer> sorter = new QuickSorter<Integer>();
+    	
+    	Integer[] expected = {24,43,54,65,73};
+    	Integer[] actual = sorter.sort(input);
+    	Assert.assertArrayEquals(expected, actual);
+    	
+    }
 }
