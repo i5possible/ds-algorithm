@@ -1,6 +1,5 @@
 package sorting;
 
-import commons.SortUtils;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +27,9 @@ public class SorterTest {
 
         return Arrays.asList(new Object[][]{
                 {new BubbleSorter<Integer>(), input, expected},
-                {new BubbleSorter<Person>(), personInput, personExpected}
+                {new BubbleSorter<Person>(), personInput, personExpected},
+                {new QuickSorter<Integer>(), input, expected},
+                {new QuickSorter<Person>(), personInput, personExpected}
         });
     }
 
