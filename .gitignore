@@ -27,3 +27,10 @@ gradle/*
 
 # IDEA
 .idea/
+
+# Jekyll
+_site/
+.sass-cache/
+vendor/
+.bundle/
+Gemfile.lock
