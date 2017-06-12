@@ -7,7 +7,7 @@
 
 ### Linear List
 
-[SinglyLinkedList](/ds-algorithm/2017/06/11/linear-list.html)
+[Linear List](/ds-algorithm/2017/06/11/linear-list.html)
 
 ### Sorting Algorithm
 
