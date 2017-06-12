@@ -15,8 +15,7 @@ public class SortUtils {
 	 * @param right
 	 */
 	public static <T> void exchangeArrayValue(T[] input,int left,int right) {
-		T temp = null;
-		temp = input[left];
+		T temp = input[left];
 		input[left] = input[right];
 		input[right] = temp;
 	}
