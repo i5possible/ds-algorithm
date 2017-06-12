@@ -26,8 +26,6 @@ public class QuickSorter<T extends Comparable<T>> implements Sorter<T> {
 		int leftStartIndex = left; 
 		int rightStartIndex = right;
 		
-		T temp = null;
-		
 		if(left > right) {
 			return ;
 		}
