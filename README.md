@@ -7,6 +7,8 @@
 
 ### Linear List
 
+[Linear List](/ds-algorithm/2017/06/11/linear-list.html)
+
 ### Sorting Algorithm
 
 ### Stack and Queue
