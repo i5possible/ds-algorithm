@@ -24,7 +24,7 @@ public class SorterTest {
         Integer[] actual = sorter.sort(input);
         Assert.assertArrayEquals(expected, actual);
     }
-
+  
     @Test
     public void bubble_sort_object_test() {
         Sorter<Person> sorter = new BubbleSorter<>();
