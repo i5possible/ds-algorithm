@@ -43,7 +43,7 @@ public class SorterTest {
         this.input = input;
         this.expected = expected;
     }
-
+  
     @Test
     public void test() {
         Assert.assertArrayEquals(expected, sorter.sort(input));
