@@ -1,4 +1,4 @@
-package sorting;
+package sorting.domain;
 
 /**
  * Created by lianghong on 12/06/2017.
