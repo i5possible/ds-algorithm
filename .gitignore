@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Compiled class file
 *.class
 
@@ -102,4 +101,3 @@ _site/
 vendor/
 .bundle/
 Gemfile.lock
->>>>>>> 8b1b573... modify README.md
