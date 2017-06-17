@@ -50,4 +50,24 @@ public class Person implements Comparable<Person>{
     public int carCompareTo(Person person) {
         return car.compareTo(person.getCar());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+
+        Person person = (Person) o;
+
+        if (getName() != null ? !getName().equals(person.getName()) : person.getName() != null) return false;
+        if (getAge() != null ? !getAge().equals(person.getAge()) : person.getAge() != null) return false;
+        return getCar() != null ? getCar().equals(person.getCar()) : person.getCar() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getName() != null ? getName().hashCode() : 0;
+        result = 31 * result + (getAge() != null ? getAge().hashCode() : 0);
+        result = 31 * result + (getCar() != null ? getCar().hashCode() : 0);
+        return result;
+    }
 }

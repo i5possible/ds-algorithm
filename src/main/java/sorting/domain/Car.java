@@ -22,4 +22,19 @@ public class Car implements Comparable<Car>{
     public void setPrice(int price) {
         this.price = price;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+
+        Car car = (Car) o;
+
+        return getPrice() == car.getPrice();
+    }
+
+    @Override
+    public int hashCode() {
+        return getPrice();
+    }
 }
