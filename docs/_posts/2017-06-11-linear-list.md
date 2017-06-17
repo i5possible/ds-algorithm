@@ -1,14 +1,14 @@
 ## Linear List
 
 ### Singly Linked List
-![Singly Linked List](/images/Singly-linked-list.png)
+![Singly Linked List]({{ site.baseurl }}{{ site.imgurl }}/Singly-linked-list.png)
 
 ### Doubly Linked List
-![Doubly Linked List](/images/Doubly-linked-list.png)
+![Doubly Linked List]({{ site.baseurl }}{{ site.imgurl }}/Doubly-linked-list.png)
 
 ### Multiply Linked List
-![Multiply Linked List](/images/Multiply-linked-list.gif)
+![Multiply Linked List]({{ site.baseurl }}{{ site.imgurl }}/Multiply-linked-list.gif)
 
 ### Circular Linked List
-![Circle Linked List](/images/Circularly-linked-list.png)
+![Circle Linked List]({{ site.baseurl }}{{ site.imgurl }}/Circularly-linked-list.png)
 

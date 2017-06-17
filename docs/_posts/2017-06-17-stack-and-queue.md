@@ -4,11 +4,11 @@
 
 First In Last Out
 
-![Stack]({{ site.baseurl }}/images/Stack.png)
+![Stack]({{ site.baseurl }}{{ site.imgurl }}/Stack.png)
 
 ### Queue
 
 First In First Out
 
-![Queue]({{ site.baseurl }}/images/Queue_simple.png)
+![Queue]({{ site.baseurl }}{{ site.imgurl }}/Queue_simple.png)
 

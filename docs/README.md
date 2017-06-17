@@ -1,13 +1,15 @@
 ## This is a demo used for explain the basic data structure and the algorithm in a simple way.
 
+### [Link Test]({{ site.baseurl }}/2017/06/11/test.html)
+
 ### Growth of Funciton
 1. O-notation
 2. Ω-notation
 3. Θ-notation
 
-### [Linear List](/2017/06/11/linear-list.html)
+### [Linear List]({{ site.baseurl }}/2017/06/11/linear-list.html)
 
-### [Stack and Queue](/2017/06/17/stack-and-queue.html)
+### [Stack and Queue]({{ site.baseurl }}/2017/06/17/stack-and-queue.html)
 
 ### Sorting Algorithm
 
