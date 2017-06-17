@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled class file
 *.class
 
@@ -63,3 +64,42 @@ vendor/
 .bundle/
 Gemfile.lock
 /.gitignore
+=======
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Gradle
+.gradle
+gradle/*
+
+# IDEA
+.idea/
+.DS_Store
+
+# Jekyll
+_site/
+.sass-cache/
+vendor/
+.bundle/
+Gemfile.lock
+>>>>>>> 8b1b573... modify README.md

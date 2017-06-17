@@ -5,13 +5,22 @@
 2. Ω-notation
 3. Θ-notation
 
-### Linear List
+### [Linear List](/ds-algorithm/2017/06/11/linear-list.html)
 
-[Linear List](/ds-algorithm/2017/06/11/linear-list.html)
+### [Stack and Queue](/ds-algorithm/2017/06/17/stack-and-queue.html)
 
 ### Sorting Algorithm
 
-### Stack and Queue
+1. Bubble Sort
+2. Selection Sort
+3. Insertion Sort
+4. Heap Sort
+5. Merge Sort
+6. Quick Sort
+7. Shell Sort
+8. Counting Sort
+9. Bucket Sort
+10. Radix Sort
 
 ### Divide and Conquer
 
