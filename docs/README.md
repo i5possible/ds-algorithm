@@ -5,9 +5,9 @@
 2. Ω-notation
 3. Θ-notation
 
-### [Linear List](/ds-algorithm/2017/06/11/linear-list.html)
+### [Linear List](/2017/06/11/linear-list.html)
 
-### [Stack and Queue](/ds-algorithm/2017/06/17/stack-and-queue.html)
+### [Stack and Queue](/2017/06/17/stack-and-queue.html)
 
 ### Sorting Algorithm
 

@@ -2,4 +2,4 @@ theme: jekyll-theme-time-machine
 
 url: 'https://i5possible.github.io'
 
-baseurl: '/ds-algorithm'
+## baseurl: '/ds-algorithm'
