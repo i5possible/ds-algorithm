@@ -1,8 +1,6 @@
 ## This is a demo used for explain the basic data structure and the algorithm in a simple way.
 
-### [Link Test]({{ site.baseurl }}/2017/06/11/test.html)
-
-### Growth of Funciton
+### Growth of Function
 1. O-notation
 2. Ω-notation
 3. Θ-notation
@@ -11,18 +9,8 @@
 
 ### [Stack and Queue]({{ site.baseurl }}/2017/06/17/stack-and-queue.html)
 
-### Sorting Algorithm
+### [Sorting Algorithm]({{ site.baseurl}}/2017/06/18/sorting-algorithm.html)
 
-1. Bubble Sort
-2. Selection Sort
-3. Insertion Sort
-4. Heap Sort
-5. Merge Sort
-6. Quick Sort
-7. Shell Sort
-8. Counting Sort
-9. Bucket Sort
-10. Radix Sort
 
 ### Divide and Conquer
 
