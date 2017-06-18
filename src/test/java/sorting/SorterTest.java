@@ -7,8 +7,8 @@ import org.junit.runners.Parameterized;
 import sorting.domain.Car;
 import sorting.domain.Person;
 
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by lianghong on 11/06/2017.
@@ -18,6 +18,9 @@ public class SorterTest {
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
+        List<Sorter> integerSorterList = getIntegerSorterList();
+        List<Sorter> personSorterList = getPersonSorterList();
+
         Integer[] input = {2, 1, 4, 5, 3};
         Integer[] expected = {1, 2, 3, 4, 5};
 
@@ -27,12 +30,38 @@ public class SorterTest {
         Person[] personInput = {lh, sxb, cl};
         Person[] personExpected = {cl, lh, sxb};
 
-        return Arrays.asList(new Object[][]{
-                {new BubbleSorter<Integer>(), input, expected},
-                {new BubbleSorter<Person>(), personInput, personExpected},
-                {new QuickSorter<Integer>(), input, expected},
-                {new QuickSorter<Person>(), personInput, personExpected}
-        });
+        List<Object[]> result = getResultList(integerSorterList, personSorterList,
+                input, expected, personInput, personExpected);
+        return result;
+    }
+
+    private static List<Object[]> getResultList(
+            List<Sorter> integerSorterList, List<Sorter> personSorterList, Integer[] input,
+            Integer[] expected, Person[] personInput, Person[] personExpected) {
+        List<Object[]> result = new ArrayList<>();
+        result.addAll(integerSorterList.stream()
+                .map(integerSorter -> new Object[]{integerSorter, input, expected})
+                .collect(Collectors.toList()));
+        result.addAll(personSorterList.stream()
+                .map(personSorter -> new Object[]{personSorter, personInput, personExpected})
+                .collect(Collectors.toList()));
+        return result;
+    }
+
+    private static List<Sorter> getPersonSorterList() {
+        List<Sorter> personSorterList = new ArrayList<>();
+        personSorterList.add(new BubbleSorter<Person>());
+        personSorterList.add(new QuickSorter<Person>());
+        personSorterList.add(new SelectionSorter<Person>());
+        return personSorterList;
+    }
+
+    private static List<Sorter> getIntegerSorterList() {
+        List<Sorter> integerSorterList = new ArrayList<>();
+        integerSorterList.add(new BubbleSorter<Integer>());
+        integerSorterList.add(new QuickSorter<Integer>());
+        integerSorterList.add(new SelectionSorter<Integer>());
+        return integerSorterList;
     }
 
     private Sorter sorter;
@@ -45,7 +74,7 @@ public class SorterTest {
         this.input = input;
         this.expected = expected;
     }
-  
+
     @Test
     public void test() {
         Assert.assertArrayEquals(expected, sorter.sort(input));
