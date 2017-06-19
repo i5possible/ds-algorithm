@@ -1,6 +1,6 @@
 ---
 layout: default
-titile : Soring Algorithm
+title : Soring Algorithm
 ---
 
 ### [Bubble Sort](https://github.com/i5possible/ds-algorithm/blob/master/src/main/java/sorting/BubbleSorter.java)
@@ -9,14 +9,19 @@ titile : Soring Algorithm
 ![bubble-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/bubble-sort-feel.gif)
 
 ### [Selection Sort](https://github.com/i5possible/ds-algorithm/blob/master/src/main/java/sorting/SelectionSorter.java)
-![selection-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/selection-sort-show.gif)
+![selection-sort-show]({{ site.baseurl }}{{ site.imgurl }}/selection-sort-show.gif)
 
 ![selection-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/selection-sort-feel.gif)
 
-### Insertion Sort
+### [Insertion Sort](https://github.com/i5possible/ds-algorithm/blob/master/src/main/java/sorting/InsertionSorter.java)
+![insertion-sort-show]({{ site.baseurl }}{{ site.imgurl }}/insertion-sort-show.gif)
+
+![insertion-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/insertion-sort-feel.gif)
 
 ### Heap Sort
-![heap-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/heap-sort.gif)
+![heap-sort-show]({{ site.baseurl }}{{ site.imgurl }}/heap-sort-show.gif)
+
+![heap-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/heap-sort-feel.gif)
 
 ### Merge Sort
 

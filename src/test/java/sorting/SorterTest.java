@@ -53,6 +53,7 @@ public class SorterTest {
         personSorterList.add(new BubbleSorter<Person>());
         personSorterList.add(new QuickSorter<Person>());
         personSorterList.add(new SelectionSorter<Person>());
+        personSorterList.add(new InsertionSorter<Person>());
         return personSorterList;
     }
 
@@ -61,6 +62,7 @@ public class SorterTest {
         integerSorterList.add(new BubbleSorter<Integer>());
         integerSorterList.add(new QuickSorter<Integer>());
         integerSorterList.add(new SelectionSorter<Integer>());
+        integerSorterList.add(new InsertionSorter<Integer>());
         return integerSorterList;
     }
 
