@@ -8,17 +8,20 @@ titile : Soring Algorithm
 
 ![bubble-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/bubble-sort-feel.gif)
 
-### Selection Sort
+### [Selection Sort](https://github.com/i5possible/ds-algorithm/blob/master/src/main/java/sorting/SelectionSorter.java)
+![selection-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/selection-sort-show.gif)
+
+![selection-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/selection-sort-feel.gif)
 
 ### Insertion Sort
 
 ### Heap Sort
-![bubble-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/heap-sort.gif)
+![heap-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/heap-sort.gif)
 
 ### Merge Sort
 
 ### [Quick Sort](https://github.com/i5possible/ds-algorithm/blob/master/src/main/java/sorting/QuickSorter.java)
-![bubble-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/quick-sort.gif)
+![quick-sort-feel]({{ site.baseurl }}{{ site.imgurl }}/quick-sort.gif)
 
 ### Shell Sort
 
