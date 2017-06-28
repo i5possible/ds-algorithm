@@ -3,6 +3,9 @@ package sorting;
 import org.junit.Assert;
 import org.junit.Test;
 
+import entity.Car;
+import entity.Person;
+
 import javax.smartcardio.Card;
 
 /**

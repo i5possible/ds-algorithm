@@ -1,4 +1,5 @@
-package sorting;
+package entity;
+
 
 /**
  * Created by lianghong on 12/06/2017.
