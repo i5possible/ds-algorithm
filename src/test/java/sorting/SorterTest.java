@@ -4,11 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import sorting.domain.Car;
-import sorting.domain.Person;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import entity.Car;
+import entity.Person;
 
 /**
  * Created by lianghong on 11/06/2017.
