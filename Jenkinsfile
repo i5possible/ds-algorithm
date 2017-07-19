@@ -1,9 +1,16 @@
-peline {
-    agent { docker 'maven:3.3.3' }
+pipeline {
+    agent any
+
     stages {
-        stage('build') {
+        stage('Checkout'){
+
             steps {
-                sh 'mvn --version'
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkins', url: 'https://github.com/i5possible/ds-algorithm']]])
+            }
+        }
+        stage('Test'){
+            steps {
+                junit allowEmptyResults: true, keepLongStdio: true, testResults: 'report.xml'
             }
         }
     }
