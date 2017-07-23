@@ -18,34 +18,34 @@ public class SorterTest {
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
-        List<Sorter> integerSorterList = getIntegerSorterList();
-        List<Sorter> personSorterList = getPersonSorterList();
+        List<Object[]> testList = new ArrayList<>();
 
+        List<Sorter> integerSorterList = getIntegerSorterList();
         Integer[] input = {2, 1, 4, 5, 3};
         Integer[] expected = {1, 2, 3, 4, 5};
+        testList.addAll(getIntegerTestList(integerSorterList, input, expected));
 
+        List<Sorter> personSorterList = getPersonSorterList();
         Person lh = new Person("Liang Hong", 25, new Car(0));
         Person sxb = new Person("Shang Xiaobin", 24, new Car(100));
         Person cl = new Person("Chen Liang", 47, new Car(200));
         Person[] personInput = {lh, sxb, cl};
         Person[] personExpected = {cl, lh, sxb};
+        testList.addAll(getObjectTestList(personSorterList, personInput, personExpected));
 
-        List<Object[]> result = getResultList(integerSorterList, personSorterList,
-                input, expected, personInput, personExpected);
-        return result;
+        return testList;
     }
 
-    private static List<Object[]> getResultList(
-            List<Sorter> integerSorterList, List<Sorter> personSorterList, Integer[] input,
-            Integer[] expected, Person[] personInput, Person[] personExpected) {
-        List<Object[]> result = new ArrayList<>();
-        result.addAll(integerSorterList.stream()
-                .map(integerSorter -> new Object[]{integerSorter, input, expected})
-                .collect(Collectors.toList()));
-        result.addAll(personSorterList.stream()
+    private static List<Object[]> getObjectTestList(List<Sorter> personSorterList, Person[] personInput, Person[] personExpected) {
+        return personSorterList.stream()
                 .map(personSorter -> new Object[]{personSorter, personInput, personExpected})
-                .collect(Collectors.toList()));
-        return result;
+                .collect(Collectors.toList());
+    }
+
+    private static List<Object[]> getIntegerTestList(List<Sorter> integerSorterList, Integer[] input, Integer[] expected) {
+        return integerSorterList.stream()
+                .map(integerSorter -> new Object[]{integerSorter, input, expected})
+                .collect(Collectors.toList());
     }
 
     private static List<Sorter> getPersonSorterList() {
@@ -78,7 +78,7 @@ public class SorterTest {
     }
 
     @Test
-    public void test() {
+    public void aggregationTest() {
         Assert.assertArrayEquals(expected, sorter.sort(input));
     }
 }
